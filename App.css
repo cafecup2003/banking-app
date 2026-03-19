@@ -1,0 +1,107 @@
+/* Page background */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e9edf3;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main container card */
+.container {
+  width: 600px;
+  margin: 80px auto;
+  background: rgb(219, 214, 214);
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* Balance text */
+.Balance {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  color: #2d3436;
+}
+
+
+
+
+/* Deposit button */
+.deposit-btn {
+  background: linear-gradient(to right, #2e86de, #1b4fba);
+  color: white;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.deposit-btn:hover {
+  opacity: 0.9;
+}
+
+/* Withdraw button */
+.withdraw-btn {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  
+}
+
+
+/* Form section */
+.form {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.form-h3 {
+  margin-bottom: 15px;
+  color: #2d3436;
+}
+
+/* Input styling */
+.form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  font-size: 15px;
+}
+
+/* Submit button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #2d6dac, #1b4fba);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  
+}
+
+
+/*menu buttton*/
+
+.memo-btn{
+   width:15%;
+   color: rgb(128, 65, 118);
+   align-items: center;
+   padding: 8px;
+   border-radius: 4px;
+   font-size: 8px;
+   margin-bottom: 12px;
+   gap: 100px;
+}
+
