@@ -10,27 +10,27 @@ function BankingApp() {
 
   const API_URL = "http://localhost:8080/api";
 
-  // ✅ Load balance + transactions on start
+  //  Load balance + transactions on start
   useEffect(() => {
     fetchBalance();
     fetchTransactions();
   }, []);
 
-  // ✅ Fetch Balance
+  //  Fetch Balance
   const fetchBalance = async () => {
     const res = await fetch(`${API_URL}/balance`);
     const data = await res.json();
     setBalance(data);
   };
 
-  // ✅ Fetch Transactions
+  //  Fetch Transactions
   const fetchTransactions = async () => {
     const res = await fetch(`${API_URL}/transactions`);
     const data = await res.json();
     setTransactions(data);
   };
 
-  // ✅ Handle Submit (Deposit / Withdraw)
+  //  Handle Submit (Deposit / Withdraw)
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -70,7 +70,7 @@ function BankingApp() {
     }
   };
 
-  // ✅ Show Memo from backend data
+  // Show Memo from backend data
   const showMemoAlert = () => {
     if (transactions.length === 0) {
       alert("No transactions yet.");
