@@ -17,25 +17,25 @@ public class TransactionController {
     @Autowired
     private AccountService service;
 
-    // ✅ Deposit API
+    //  Deposit API
     @PostMapping("/deposit")
     public Transaction deposit(@RequestBody TransactionRequest req) {
         return service.deposit(req);
     }
 
-    // ✅ Withdraw API
+    //  Withdraw API
     @PostMapping("/withdraw")
     public Transaction withdraw(@RequestBody TransactionRequest req) {
         return service.withdraw(req);
     }
 
-    // ✅ Memo (all transactions)
+    //  Memo (all transactions)
     @GetMapping("/transactions")
     public List<Transaction> getTransactions() {
         return service.getTransactions();
     }
 
-    // ✅ Balance
+    //  Balance
     @GetMapping("/balance")
     public double getBalance() {
         return service.getBalance();
